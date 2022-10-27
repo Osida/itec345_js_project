@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock, Scissors, Paper, Lizard, Spock</title>
+</head>
+<body>
+
+<h1>Welcome to my game! 🎲🎮</h1>
+
+<label for="rounds">How many rounds:</label><br>
+<div class="flex_row">
+    <input type="number" min="1" max="100" id="rounds" placeholder="Rounds?" value="0"><br>
+    <button onclick="startGame()">Start Game</button>
+</div>
+
+<hr>
+
+<span id="winner_results"></span>
+
+<div class="flex_row">
+    <button onclick="getUserChoice(this)" data-option="rock" disabled>Rock 🪨</button>
+    <button onclick="getUserChoice(this)" data-option="paper" disabled>Paper 📃</button>
+    <button onclick="getUserChoice(this)" data-option="scissors" disabled>Scissors ✂</button>
+    <button onclick="getUserChoice(this)" data-option="spock" disabled>Spock 🖖</button>
+    <button onclick="getUserChoice(this)" data-option="lizard" disabled>Lizard 🐉</button>
+</div>
+
+
+<div class="battle_arena">
+    <div class="flex_row space_content">
+        <div class="flex_col">
+            <h2>User 👤</h2>
+            <span id="user_results"></span>
+        </div>
+
+        <div class="flex_col">
+            <h2>AI 🤖</h2>
+            <span id="ai_results"></span>
+        </div>
+
+        <div class="flex_col">
+            <h2>Winner 🏆</h2>
+            <span id="match_results"></span>
+        </div>
+    </div>
+</div>
+
+</body>
+<script rel="script" src="main.js"></script>
+</html>
