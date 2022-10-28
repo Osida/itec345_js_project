@@ -1,24 +1,16 @@
 input {
     min-height: 1rem;
     min-width: 3rem;
-    padding: 0.5rem;
+    padding: 0.5rem 0.3rem;
 }
 
 button {
     padding: 0.5rem;
+    margin-left: 0.7rem;
 }
 
 button, input {
     cursor: pointer;
-
-}
-
-p, label {
-    line-height: 2rem;
-}
-
-h2 {
-    font-weight: bold;
 }
 
 hr {
@@ -26,11 +18,22 @@ hr {
     width: 70%;
 }
 
-p {
+.title {
+}
+
+.subtitle {
+    font-size: 1.2rem;
+}
+
+.divider {
     margin-bottom: 1rem;
-    margin-left: 0.5rem;
-    font-size: 2rem;
-    font-weight: bold;
+}
+
+.flex_row {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    flex: 1;
 }
 
 .flex_col {
@@ -43,27 +46,11 @@ p {
     margin-top: 1.2rem;
 }
 
-.flex_row {
-    display: flex;
-}
-
-.flex_row button {
-    margin-left: 0.75rem;
-}
-
-.hidden {
-    display: none;
-}
-
-.visible {
-    display: inline-block;
-}
-
 .battle_arena {
     width: 90%;
     margin-top: 1rem;
 }
 
-.space_content {
+.space_evenly {
     justify-content: space-evenly;
 }

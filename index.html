@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
-    <title>Rock, Scissors, Paper, Lizard, Spock</title>
+    <title>JS Project: Game</title>
 </head>
 <body>
+<h1 class="title">Welcome to my game! 🎲🎮</h1>
 
-<h1>Welcome to my game! 🎲🎮</h1>
-
-<label for="rounds">How many rounds:</label><br>
+<label for="rounds" class="subtitle">How many rounds:</label> <br class="divider">
 <div class="flex_row">
-    <input type="number" min="1" max="100" id="rounds" placeholder="Rounds?" value="0"><br>
+    <input id="rounds" type="number" placeholder="Rounds?" value="0" min="1" max="100"> <br>
     <button onclick="startGame()">Start Game</button>
 </div>
 
 <hr>
 
-<span id="winner_results"></span>
+<div id="winner_results"></div>
 
 <div class="flex_row">
     <button onclick="getUserChoice(this)" data-option="rock" disabled>Rock 🪨</button>
@@ -27,26 +26,25 @@
     <button onclick="getUserChoice(this)" data-option="lizard" disabled>Lizard 🐉</button>
 </div>
 
-
 <div class="battle_arena">
-    <div class="flex_row space_content">
+    <div class="flex_row space_evenly">
         <div class="flex_col">
-            <h2>User 👤</h2>
-            <span id="user_results"></span>
+            <h3>User 👤</h3>
+            <div id="user_results" class="flex_col"></div>
         </div>
 
         <div class="flex_col">
-            <h2>AI 🤖</h2>
-            <span id="ai_results"></span>
+            <h3>AI 🤖</h3>
+            <div id="ai_results" class="flex_col"></div>
         </div>
 
         <div class="flex_col">
-            <h2>Winner 🏆</h2>
-            <span id="match_results"></span>
+            <h3>Winner 🏆</h3>
+            <div id="match_results" class="flex_col"></div>
         </div>
     </div>
 </div>
 
 </body>
-<script rel="script" src="main.js"></script>
+<script src="main.js"></script>
 </html>
